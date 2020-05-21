@@ -1,0 +1,13 @@
+{
+  "name": "histo-scout-server",
+  "version": "0.0.0",
+  "description": "HistoScoutServer",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.15"
+  }
+}
