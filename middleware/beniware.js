@@ -1,10 +1,8 @@
 const { Beni } = require('../models/beni');
 
 // INSERISCE BENE
-async function createBene(dati) {
-
-    // var dati = JSON.parse(dati_bene);
-
+async function createBene(dati) {   
+    
     for (var i = 0; i <= dati.features.length; i++)
     {
         // creazione dell'oggetto (o record) della collezione

@@ -6,11 +6,11 @@ const { createBene,
 const router = express.Router();
 
 // CREATE
-// inserisce i dati di uno o piÃ¹ edificio storico
+// inserisce i dati di uno o più edificio storico
 router.post('/', (req, res) => {
     createBene(req.body)
-        .then((result) => { res.status(200).send(result) })
-        .catch((err) => { res.status(400).send(err) })
+        .then(() => { res.status(200).send() })
+        .catch(() => { res.status(404).send() })
 });
 // --------------------------------------------------------------------
 
