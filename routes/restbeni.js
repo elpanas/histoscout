@@ -9,8 +9,8 @@ const router = express.Router();
 // inserisce i dati di uno o più edificio storico
 router.post('/', (req, res) => {
     createBene(req.body)
-        .then(() => { res.status(200).send() })
-        .catch((err) => { res.status(404).send(err) })
+        .then((result) => { res.status(200).send(result) })
+        .catch((err) => { res.status(400).send(err) })
 });
 // --------------------------------------------------------------------
 
