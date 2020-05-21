@@ -18,12 +18,10 @@ async function createBene(dati_bene) {
             }
         });
 
-        var result = await bene.save();
-
-        if (!result) throw Error;
+        var result = await bene.save();        
     }
 
-    return true;
+    return result;
 }
 
 // RECUPERA EDIFICI
