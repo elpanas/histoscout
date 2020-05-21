@@ -31,4 +31,4 @@ const beniSchema = new mongoose.Schema({
 // creazione della collezione sulla base dello schema
 const Beni = mongoose.model('beni', beniSchema);
 
-exports.Stabilimento = Stabilimento;
+exports.Beni = Beni;
