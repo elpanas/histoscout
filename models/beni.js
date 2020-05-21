@@ -3,21 +3,17 @@ const mongoose = require('mongoose');
 const pointSchema = new mongoose.Schema({
     type: {
         type: String, // Don't do `{ location: { type: String } }`
-        enum: ['Point'], // 'location.type' must be 'Point'  
-        required: true
+        enum: ['Point'] // 'location.type' must be 'Point'         
     },
-    coordinates: [Number],
-    required: true
+    coordinates: [Number]
 });
 
 const polygonSchema = new mongoose.Schema({
     type: {
         type: String, // Don't do `{ location: { type: String } }`
-        enum: ['Polygon'], // 'location.type' must be 'Point'  
-        required: true
+        enum: ['Polygon'] // 'location.type' must be 'Point'      
     },
-    coordinates: [[[Number]]],
-    required: true
+    coordinates: [[[Number]]]
 });
 
 // schema della collezione (o tabella)

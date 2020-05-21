@@ -1,7 +1,7 @@
 {
-  "name": "histoscout",
-  "version": "1.0.0",
-  "description": "",
+  "name": "histo-scout-server",
+  "version": "0.0.0",
+  "description": "HistoScoutServer",
   "main": "server.js",
   "author": {
     "name": ""
