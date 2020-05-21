@@ -1,9 +1,9 @@
 const { Beni } = require('../models/beni');
 
 // INSERISCE BENE
-async function createBene(dati_bene) {
+async function createBene(dati) {
 
-    var dati = JSON.parse(dati_bene);
+    // var dati = JSON.parse(dati_bene);
 
     for (var i = 0; i <= dati.features.length; i++)
     {
