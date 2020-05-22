@@ -8,6 +8,9 @@ async function createBene(dati) {
         // creazione dell'oggetto (o record) della collezione
         const bene = new Beni({
             nome: dati.features[i].properties.nome,
+            anno: dati.features[i].properties.anno,
+            tipo: dati.features[i].properties.tipo,
+            tipom: dati.features[i].properties.tipom,
             localita: dati.features[i].properties.localita,
             provincia: dati.features[i].properties.provincia,            
             location: {

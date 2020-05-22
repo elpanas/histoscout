@@ -21,7 +21,9 @@ const beniSchema = new mongoose.Schema({
     nome: {
         type: String, required: true
     },
-    anno: String,    
+    anno: String,
+    tipo: Number,
+    tipom: { type: Number, default: 0 },
     localita: String,
     provincia: String,
     location: polygonSchema, pointSchema
