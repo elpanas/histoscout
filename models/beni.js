@@ -8,6 +8,14 @@ const pointSchema = new mongoose.Schema({
     coordinates: [Number]
 });
 
+const lineSchema = new mongoose.Schema({
+    type: {
+        type: String, // Don't do `{ location: { type: String } }`
+        enum: ['LineString'] // 'location.type' must be 'Point'         
+    },
+    coordinates: [[Number]]
+});
+
 const polygonSchema = new mongoose.Schema({
     type: {
         type: String, // Don't do `{ location: { type: String } }`
@@ -26,7 +34,7 @@ const beniSchema = new mongoose.Schema({
     tipom: { type: Number, default: 0 },
     localita: String,
     provincia: String,
-    location: polygonSchema, pointSchema
+    location: polygonSchema, pointSchema, lineSchema
     })
     .index({ nome: 1, localita: 1, provincia: 1 }, { unique: true });
 
