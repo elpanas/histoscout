@@ -24,7 +24,7 @@ const beniSchema = new mongoose.Schema({
     anno: String,    
     localita: String,
     provincia: String,
-    location: polygonSchema
+    location: polygonSchema, pointSchema
     })
     .index({ nome: 1, localita: 1, provincia: 1 }, { unique: true });
 
