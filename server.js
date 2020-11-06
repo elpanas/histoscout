@@ -8,7 +8,7 @@ mongoose.set('useCreateIndex', true); // obbliga mongoose a usare CreateIndex (n
 app.use(express.json()); // built-in middleware
 
 // connessione al db
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to MongoDB...'))
     .catch(err => console.error('Could not connect to MongoDB...', err));
 
